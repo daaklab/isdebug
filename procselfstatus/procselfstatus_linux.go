@@ -6,7 +6,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/daakdev/isdebug"
+	"github.com/daaklab/isdebug"
 )
 
 func init() {
