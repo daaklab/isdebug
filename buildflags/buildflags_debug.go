@@ -2,7 +2,7 @@
 
 package buildtag
 
-import "github.com/daakdev/isdebug"
+import "github.com/daaklab/isdebug"
 
 func init() {
 	isdebug.Enabled = true

@@ -3,7 +3,7 @@ package cmdargs
 import (
 	"os"
 
-	"github.com/daakdev/isdebug"
+	"github.com/daaklab/isdebug"
 )
 
 func init() {

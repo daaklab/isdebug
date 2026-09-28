@@ -9,7 +9,7 @@ This package provides the `isdebug.Enabled` variable to check whether the progra
 Detects whether `-tags=debug` was set at compile time.
 
 ```go
-import _ "github.com/daakdev/isdebug/buildflags"
+import _ "github.com/daaklab/isdebug/buildflags"
 ```
 
 
@@ -18,7 +18,7 @@ import _ "github.com/daakdev/isdebug/buildflags"
 Detects whether the `DEBUG` environment variable is set at runtime.
 
 ```go
-import _ "github.com/daakdev/isdebug/env"
+import _ "github.com/daaklab/isdebug/env"
 ```
 
 ```sh
@@ -31,7 +31,7 @@ DEBUG=1 /path/to/program
 Detects whether `--debug` was passed as a command-line argument at runtime.
 
 ```go
-import _ "github.com/daakdev/isdebug/cmdarg"
+import _ "github.com/daaklab/isdebug/cmdarg"
 ```
 
 ```sh
@@ -44,7 +44,7 @@ import _ "github.com/daakdev/isdebug/cmdarg"
 Detects whether `TracerPid` is present in `/proc/self/status`.
 
 ```go
-import _ "github.com/daakdev/isdebug/procselfstatus"
+import _ "github.com/daaklab/isdebug/procselfstatus"
 ```
 
 
@@ -54,7 +54,7 @@ import _ "github.com/daakdev/isdebug/procselfstatus"
 There's also a `sloghandler` that ignores the configured level and always logs when `isdebug.Enabled` is `true`.
 
 ```go
-import "github.com/daakdev/isdebug/sloghandler"
+import "github.com/daaklab/isdebug/sloghandler"
 
 logger := slog.New(sloghandler.New(slog.NewJSONHandler(os.Stdout, nil)))
 ```

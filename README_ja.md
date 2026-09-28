@@ -9,7 +9,7 @@ Go言語にはデバッグ実行中かどうかを判断する方法が公式に
 コンパイル時に`-tags=debug`が設定されているかどうかを検知します。
 
 ```go
-import _ "github.com/daakdev/isdebug/buildflags"
+import _ "github.com/daaklab/isdebug/buildflags"
 ```
 
 
@@ -18,7 +18,7 @@ import _ "github.com/daakdev/isdebug/buildflags"
 実行時に環境変数`DEBUG`が設定されているかどうかを検知します。
 
 ```go
-import _ "github.com/daakdev/isdebug/env"
+import _ "github.com/daaklab/isdebug/env"
 ```
 
 ```sh
@@ -31,7 +31,7 @@ DEBUG=1 /path/to/program
 実行時にコマンドライン引数として`--debug`が渡されているかを検知します。
 
 ```go
-import _ "github.com/daakdev/isdebug/cmdarg"
+import _ "github.com/daaklab/isdebug/cmdarg"
 ```
 
 ```sh
@@ -44,7 +44,7 @@ import _ "github.com/daakdev/isdebug/cmdarg"
 /proc/self/statusにTracerPidが存在するかを検知します。
 
 ```go
-import _ "github.com/daakdev/isdebug/procselfstatus"
+import _ "github.com/daaklab/isdebug/procselfstatus"
 ```
 
 
@@ -54,7 +54,7 @@ import _ "github.com/daakdev/isdebug/procselfstatus"
 `isdebug.Enabled`が`true`時は設定レベルを無視して出力する`sloghandler`もあるよ。
 
 ```go
-import "github.com/daakdev/isdebug/sloghandler"
+import "github.com/daaklab/isdebug/sloghandler"
 
 logger := slog.New(sloghandler.New(slog.NewJSONHandler(os.Stdout, nil)))
 ```

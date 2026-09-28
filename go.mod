@@ -1,3 +1,3 @@
-module github.com/daakdev/isdebug
+module github.com/daaklab/isdebug
 
 go 1.26

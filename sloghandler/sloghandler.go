@@ -4,7 +4,7 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/daakdev/isdebug"
+	"github.com/daaklab/isdebug"
 )
 
 type handler struct {
